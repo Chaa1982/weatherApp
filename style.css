@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    background-image: url(./image/weather_img.jpg);
+    
+}
+#main {
+
+    border-radius: 10%;
+    background: rgba(38, 117, 212, 0);
+    width: 400px;
+    margin: auto;
+}
+h1 {
+    color:rgb(39, 28, 197)
+}
+#city-input, #submit{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+#window-app, #weather-data {
+    text-align: center;
+}
+#weather-data {
+    
+    
+    text-shadow: 1px 2px 2px pink;
+    color: rgb(116, 7, 122);
+}
+#submit {
+    background: blue;
+    color: white;
+    transition: .3s linear;
+}
+
+#submit:hover {
+    background: yellow;
+    color: green;
+}
