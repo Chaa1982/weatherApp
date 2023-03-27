@@ -2,7 +2,10 @@ body{
     margin: 0;
     padding: 0;
     font-size: 25px;
-    background-image: url(./image/weather_img.jpg);
+    background-image: url(./image/img2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
     
 }
 #main {
@@ -13,8 +16,9 @@ body{
     margin: auto;
 }
 h1 {
-    color:rgb(39, 28, 197)
+    color:rgb(248, 248, 7)
 }
+
 #city-input, #submit{
     font-size: 20px;
     margin-bottom: 15px;
@@ -23,18 +27,21 @@ h1 {
     text-align: center;
 }
 #weather-data {
-    
-    
     text-shadow: 1px 2px 2px pink;
     color: rgb(116, 7, 122);
+    
 }
 #submit {
-    background: blue;
+    background: rgb(149, 0, 255);
     color: white;
     transition: .3s linear;
 }
 
 #submit:hover {
-    background: yellow;
+    background: rgb(5, 104, 209);
     color: green;
+}
+
+#description{
+    color: rgb(68, 9, 96);
 }
