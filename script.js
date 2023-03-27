@@ -10,6 +10,7 @@ const requestOptions = {
 const API_KEY = `6409ee75b6ffc020adb31a565296a4bb`
 const errorStatuses = ["404", 401, "400"];
 let isLoading = false;
+const arrayRequests = [];
 
 
 const lastRequestedData = localStorage.getItem("weather-data")
@@ -37,6 +38,8 @@ function getWeather(city) {
 
             localStorage.setItem("city", city);
             localStorage.setItem("weather-data", JSON.stringify(response));
+            arrayRequests.push(JSON.stringify(response));
+            console.log("ARRAY", arrayRequests);
 
             // усли все хооошо - выводим
             renderWeather(response);
